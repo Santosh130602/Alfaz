@@ -1,0 +1,297 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Jameel+Noori+Nastaleeq&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6C63FF;
+  --color-primary-dark: #5A52D5;
+  --color-accent: #FF6584;
+  --color-bg: #0F0F0F;
+  --color-surface: #1A1A1A;
+  --color-surface2: #242424;
+  --color-border: #2E2E2E;
+  --color-text: #F5F5F5;
+  --color-muted: #888888;
+  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  direction: rtl;
+  text-align: right;
+}
+
+Scrollbar
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.animate-slide-up { animation: slide-up 0.25s ease-out; } */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Jameel+Noori+Nastaleeq&display=swap');
+@import "tailwindcss";
+
+
+:root {
+  --theme-primary: #1A1A1A;       
+  --theme-primary-dark: #000000;  
+  --theme-accent: #C39B57;        
+  --theme-bg: #F8F5F0;          
+  --theme-surface: #FFFFFF;       
+  --theme-surface2: #EAE5DB;    
+  --theme-border: #D4CBB8;       
+  --theme-text: #201E1C;         
+  --theme-muted: #827A71;       
+}
+
+
+.dark {
+  --theme-primary: #D8B26B;      
+  --theme-primary-dark: #B89045;  
+  --theme-accent: #EAD199;        
+  --theme-bg: #0A0A0A;           
+  --theme-surface: #141414;       
+  --theme-surface2: #222222;      
+  --theme-border: #332E27;        
+  --theme-text: #F0EBE1;          
+  --theme-muted: #938A7F;        
+}
+
+@theme {
+  --color-primary: var(--theme-primary);
+  --color-primary-dark: var(--theme-primary-dark);
+  --color-accent: var(--theme-accent);
+  --color-bg: var(--theme-bg);
+  --color-surface: var(--theme-surface);
+  --color-surface2: var(--theme-surface2);
+  --color-border: var(--theme-border);
+  --color-text: var(--theme-text);
+  --color-muted: var(--theme-muted);
+
+  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.8;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { 
+  background: var(--color-border); 
+  border-radius: 4px; 
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.animate-slide-up { animation: slide-up 0.25s ease-out; } */
+
+
+
+
+
+
+
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Jameel+Noori+Nastaleeq&display=swap');
+@import "tailwindcss";
+
+/* 1. Spotify Light Mode: Clean, Bright & Minimalist */
+:root {
+  --theme-primary: #121212;       /* Deep Charcoal */
+  --theme-primary-dark: #000000;  /* Pure Black */
+  --theme-accent: #1DB954;        /* Spotify Green */
+   --theme-bg: #FFFFFF;           
+  /* --theme-bg: #f4f2ee;               */
+  --theme-surface: #F6F6F6;       /* Light Gray Card/Surface */
+  --theme-surface2: #EEEEEE;      /* Hover State Gray */
+  --theme-border: #D9D9D9;        /* Soft Border */
+  --theme-text: #121212;          /* Primary Text */
+  --theme-muted: #6A6A6A;         /* Secondary/Muted Text */
+}
+
+/* 2. Spotify Dark Mode: Signature Midnight & Spotify Green */
+.dark {
+  --theme-primary: #FFFFFF;       /* Pure White Text */
+  --theme-primary-dark: #B3B3B3;  /* Subdued White */
+  --theme-accent: #1DB954;        /* Iconic Spotify Green */
+  --theme-bg: #121212;            /* Deep Spotify Black-Gray */
+  --theme-surface: #181818;       /* Elevated Card/Surface */
+  --theme-surface2: #282828;      /* Interactive Hover State */
+  --theme-border: #2A2A2A;        /* Dark Subtle Border */
+  --theme-text: #FFFFFF;          /* Primary Off-White Text */
+  --theme-muted: #A7A7A7;         /* Secondary Metadata Gray */
+}
+
+/* 3. Tailwind v4 Theme Mapping */
+@theme {
+  --color-primary: var(--theme-primary);
+  --color-primary-dark: var(--theme-primary-dark);
+  --color-accent: var(--theme-accent);
+  --color-bg: var(--theme-bg);
+  --color-surface: var(--theme-surface);
+  --color-surface2: var(--theme-surface2);
+  --color-border: var(--theme-border);
+  --color-text: var(--theme-text);
+  --color-muted: var(--theme-muted);
+
+  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  direction: rtl;
+  text-align: right;
+  line-height: 1.8;
+}
+
+/* Scrollbar - Styled to match Spotify's sleek subtle look */
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { 
+  background: rgba(100, 100, 100, 0.4); 
+  border-radius: 4px; 
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 100, 100, 0.7);
+}
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.animate-slide-up { animation: slide-up 0.25s ease-out; }
+
+
+
+
+
+
+
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 0.4s ease-out forwards;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}

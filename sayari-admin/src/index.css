@@ -1,0 +1,157 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Jameel+Noori+Nastaleeq&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #6C63FF;
+  --color-primary-dark: #5A52D5;
+  --color-accent: #FF6584;
+  --color-bg: #0F0F0F;
+  --color-surface: #1A1A1A;
+  --color-surface2: #242424;
+  --color-border: #2E2E2E;
+  --color-text: #F5F5F5;
+  --color-muted: #888888;
+  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  direction: rtl;
+  text-align: right;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.animate-slide-up { animation: slide-up 0.25s ease-out; } */
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Nastaliq+Urdu:wght@400;700&family=Jameel+Noori+Nastaleeq&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  /* Vibrant Red & Black Theme */
+  --color-primary: #E60000;       /* Vibrant primary red */
+  --color-primary-dark: #B30000;  /* Darker red for hover states */
+  --color-accent: #FF3366;        /* Bright neon pink/red for accents */
+  
+  /* Deep Dark Surface Colors */
+  --color-bg: #0A0A0A;            /* Pure dark background */
+  --color-surface: #141414;       /* Slightly lighter for cards */
+  --color-surface2: #1F1F1F;      /* For input fields */
+  --color-border: #2A2A2A;        /* Subtle borders to separate elements */
+  
+  /* Typography */
+  --color-text: #FFFFFF;          /* Crisp white text */
+  --color-muted: #A1A1AA;         /* Clean gray for secondary text */
+  
+  --font-urdu: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-display: 'Space Grotesk', system-ui, sans-serif; /* Use for headings and big numbers */
+  --font-mono: 'JetBrains Mono', monospace;               /* Use for badges, roles, and stats */
+}
+
+
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-urdu {
+  font-family: var(--font-urdu);
+  direction: rtl;
+  text-align: right;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+@keyframes slide-up {
+  from { transform: translateY(100%); opacity: 0; }
+  to   { transform: translateY(0);    opacity: 1; }
+}
+.animate-slide-up { animation: slide-up 0.25s ease-out; }
+
+
+
+
+/* Add this to your CSS file */
+@keyframes neon-pulse-error {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0px rgba(230, 0, 0, 0);
+    border-color: #2A2A2A;
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(230, 0, 0, 0.4);
+    border-color: #E60000;
+  }
+}
+
+@keyframes neon-pulse-success {
+  0%, 100% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 0px rgba(0, 230, 118, 0);
+    border-color: #2A2A2A;
+  }
+  50% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 230, 118, 0.3);
+    border-color: #00E676;
+  }
+}
+
+.toast-error-glow {
+  animation: neon-pulse-error 2s ease-in-out infinite;
+}
+
+.toast-success-glow {
+  animation: neon-pulse-success 2s ease-in-out infinite;
+}
